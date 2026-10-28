@@ -1,0 +1,27 @@
+{
+  "$comment": "Read by the agent-notepad push gate (PreToolUse Bash). Paths are repo-relative globs matched against the files in the push range @{u}..HEAD. THIS FILE IS THIS REPO'S POLICY. Copied from onedroid-docs 2026-10-28 and cut to the rules that apply here; every `requires` path exists.",
+  "$scope": "AGENT pushes only. A human running `git push` in a terminal is untouched. A passing gate proves a file MOVED, never that it is correct.",
+  "$rejected": {
+    "content/** requires dist/**": "dist/ is gitignored and never tracked, so it can never appear in a push range; the rule would block every content push. `npm run check` catches a stale local dist/, and Vercel rebuilds dist/ on every deploy."
+  },
+  "rules": [
+    {
+      "$why": "build.mjs IS the contract: which frontmatter is mandatory, how the sidebar is grouped and sorted, and that nav, llms.txt, sitemap.xml and robots.txt are generated. README.md and AGENTS.md state those rules in prose; change the generator without them and both are wrong.",
+      "when": "build.mjs",
+      "requires": ["AGENTS.md", "README.md"],
+      "level": "block"
+    },
+    {
+      "$why": "middleware.js carries the promise README.md makes: an agent gets the markdown source, byte for byte, at the canonical URL. It cannot be a vercel.json rewrite (rewrites run after the filesystem check).",
+      "when": "middleware.js",
+      "requires": ["README.md"],
+      "level": "block"
+    },
+    {
+      "$why": "WARN: vercel.json sets the build, headers, and the redirects that keep the old GitBook URLs alive. A redirect change that README does not mention is worth a nudge, not a block.",
+      "when": "vercel.json",
+      "requires": ["README.md"],
+      "level": "warn"
+    }
+  ]
+}

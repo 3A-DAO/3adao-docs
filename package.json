@@ -1,0 +1,13 @@
+{
+  "name": "3adao-docs",
+  "private": true,
+  "type": "module",
+  "description": "Markdown source of truth for docs.3adao.org",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}

@@ -4,6 +4,11 @@
   "installCommand": "npm install",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/3a-protocol", "destination": "/3a-protocol/welcome-to-3a", "permanent": true },
+    { "source": "/:top(welcome-to-3a|protocol-documentation|technical-documentation|whitelisting-criteria|community-rewards|governance|communication|user-guide|brand-assets)/:rest*", "destination": "/3a-protocol/:top/:rest*", "permanent": true },
+    { "source": "/:top(welcome-to-3a|protocol-documentation|technical-documentation|whitelisting-criteria|community-rewards|governance|communication|user-guide|brand-assets)", "destination": "/3a-protocol/:top", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

@@ -22,20 +22,20 @@ which have been addressed by 3A development team [Medium](https://blog.3adao.org
 
 ### 3A DAO Independent Audit Reports
 
-[3A DAO-March2024.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2FW5xN20QEzvu2TPhhuhD6%2F3A%20DAO-March2024.pdf?alt=media&token=32f840f8-2437-424f-b699-b05fb7d09977)
+[3A DAO-March2024.pdf](/files/audit-report/3a-dao-march2024.pdf)
 
 Redemption Fee Independent Audit
 
-[Redemption Fee.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2FeuAtwYgPCj7DCXI6vunw%2FRedemption%20Fee.pdf?alt=media&token=f7f19a34-d9ce-479c-863d-5127ae4cd224)
+[Redemption Fee.pdf](/files/audit-report/redemption-fee.pdf)
 
 Smart Vault Independent Audit
 
-[SmartVault.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2F8xPxSi7yDA6JQKqebJmW%2FSmartVault.pdf?alt=media&token=66ebacd7-579a-41a7-829f-99ebf7db80f9)
+[SmartVault.pdf](/files/audit-report/smartvault.pdf)
 
 MaticX and wstETH collateral
 
-[MaticX and wstETH.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2F8loglRA1hsNrHVR4YFx8%2FMaticX%20and%20wstETH.pdf?alt=media&token=090f07c9-2e72-43b4-bd3e-4ae3ae5b9cf8)
+[MaticX and wstETH.pdf](/files/audit-report/maticx-and-wsteth.pdf)
 
 Pyth Network integration
 
-[Pyth Network Integration.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2FAQUtl37F9V6Cx7eT8SSw%2FPyth%20Network%20Integration.pdf?alt=media&token=3c2e480c-6266-4410-a001-9302f475b602)
+[Pyth Network Integration.pdf](/files/audit-report/pyth-network-integration.pdf)

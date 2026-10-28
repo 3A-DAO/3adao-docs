@@ -19,6 +19,7 @@ never advise clicking through a wallet warning). This store describes STRUCTURE 
 ## Cross-component contracts that silently break if drifted
 - **Frontmatter `title` + `description` are REQUIRED**; the build throws without them.
 - **Images**: PNG only, under `content/img/`, referenced as `/img/...`, with alt text, or the build throws.
+- **Downloads**: PDF only, under `content/files/<page>/`, linked as `/files/...`; a link to a missing file throws.
 - **`dist/` is generated and gitignored.** Vercel builds it from `content/` on every deploy.
 - **The markdown twin is the SOURCE, byte for byte** (`files.set(..., p.raw)`).
 - **`middleware.js` cannot be a `vercel.json` rewrite**: Vercel evaluates rewrites only after the filesystem

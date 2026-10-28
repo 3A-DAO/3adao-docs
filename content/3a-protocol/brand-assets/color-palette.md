@@ -11,6 +11,6 @@ order: 152
 > ([3A DAO's announcement](https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8)). This page is kept
 > for reference and describes the protocol as it was. Do not send funds to the contracts it lists.
 
-[Logo Palette.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2FBfCKODXzh1Upgp6a9ViM%2FLogo%20Palette.pdf?alt=media&token=42fa3ce7-183f-4e20-a508-48dd86600657)
+[Logo Palette.pdf](/files/color-palette/logo-palette.pdf)
 
-[Website Palette.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2Fpdk1ICEClk52CdgsZxy6%2FWebsite%20Palette.pdf?alt=media&token=3545f0e2-8da9-4eb9-bbcb-935549d86850)
+[Website Palette.pdf](/files/color-palette/website-palette.pdf)

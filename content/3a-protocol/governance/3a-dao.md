@@ -16,7 +16,7 @@ The 3A protocol is developed and governed by the 3A DAO, a Decentralized Autonom
 
 The DAO is legally registered in the Marshall Islands, as a non-profit 3A DAO LLC.
 
-[3A DAO LLC - Corporate Charter Certificate.pdf](https://442125110-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FGbmVIsiJFchsVf8GkrQQ%2Fuploads%2FPHb5mK1SXAy8YCk1iXZQ%2F3A%20DAO%20LLC%20-%20Corporate%20Charter%20Certificate.pdf?alt=media&token=7eb9a33a-bc06-4066-8644-012c2a1d0820)
+[3A DAO LLC - Corporate Charter Certificate.pdf](/files/3a-dao/3a-dao-llc-corporate-charter-certificate.pdf)
 
 3A DAO LLC is managed by Managing Members. The initial Managing Members were approved by the community of A3A token holders in the voting process.
 

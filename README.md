@@ -22,6 +22,7 @@ exactly one copy of every sentence: the repo. The site is a build artefact.
 ```
 content/**/*.md  the docs. frontmatter: title, description, nav, section, order
 content/img/**   screenshots, PNG only
+content/files/** downloads (audit reports, brand sheets), PDF only, linked as /files/<page>/<name>.pdf
 build.mjs        markdown -> dist/. one dependency (marked)
 middleware.js    serves the markdown source to AI agents at the canonical URL
 vercel.json      build config, headers, redirects

@@ -108,6 +108,32 @@ for (const p of pages) {
   }
 }
 
+// ---------------------------------------------------------------- files
+
+// PDFs only (audit reports, brand sheets), under content/files/<page>/, copied byte for byte.
+// Same reasoning as the PNG rule: one allowed type, so nothing else can be published by accident.
+const FILES_DIR = join(CONTENT, "files");
+
+function walkFiles(dir) {
+  const out = [];
+  for (const entry of readdirSync(dir)) {
+    const full = join(dir, entry);
+    if (statSync(full).isDirectory()) out.push(...walkFiles(full));
+    else if (entry.endsWith(".pdf")) out.push(full);
+    else throw new Error(`${relative(CONTENT, full)}: only .pdf files belong under content/files/`);
+  }
+  return out;
+}
+
+const downloads = existsSync(FILES_DIR) ? walkFiles(FILES_DIR) : [];
+const downloadPaths = new Set(downloads.map((f) => "/" + relative(CONTENT, f).replace(/\\/g, "/")));
+
+for (const p of pages) {
+  for (const m of p.body.matchAll(/\]\((\/files\/[^)\s]+)\)/g)) {
+    if (!downloadPaths.has(m[1])) throw new Error(`${p.rel}: file ${m[1]} does not exist under content/`);
+  }
+}
+
 // ---------------------------------------------------------------- rendering
 
 marked.setOptions({ gfm: true });
@@ -247,6 +273,7 @@ for (const p of pages) {
 }
 
 for (const f of images) files.set(relative(CONTENT, f).replace(/\\/g, "/"), readFileSync(f));
+for (const f of downloads) files.set(relative(CONTENT, f).replace(/\\/g, "/"), readFileSync(f));
 
 files.set(
   "llms.txt",

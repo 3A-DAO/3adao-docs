@@ -24,7 +24,9 @@ npm run build     # regenerate dist/
 npm run check     # exits 1 if dist/ is stale
 ```
 
-Every page needs `title` and `description` in frontmatter; the build fails without them.
+Every page needs `title` and `description` in frontmatter; the build fails without them. Images are PNG under
+`content/img/`; downloads are PDF under `content/files/`. Any other file type there fails the build, and so does a
+link to an image or `/files/` path that does not exist.
 
 ## House rules
 

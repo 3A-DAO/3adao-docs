@@ -32,7 +32,10 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
 - **Refs**: `content/3a-protocol/technical-documentation/smart-contracts/interacting-with-contracts/borrowing-and-repaying.md`.
 - **Fix direction**: correct against the contract ABI in `3A-DAO/3a-borrowing-protocol`.
 
-### F-004 · Port gaps: one PDF dropped, PDFs still hosted on GitBook, one image skipped · OPEN
+### F-004 · Port gaps: PDFs hosted on GitBook, one image skipped · PDFs FIXED, image OPEN
+- **Fixed 2026-10-28**: all 8 PDFs (5 audits, the LLC charter certificate, 2 palettes) are now in
+  `content/files/<page>/`, served by `build.mjs`, and the links point there. The note below that the charter PDF was
+  dropped was wrong: it was linked on `governance/3a-dao.md:19`.
 - **Symptom**: the 3A DAO LLC document on `governance/3a-dao` was dropped (no resolvable URL); the 5 audit PDFs and
   2 palette PDFs link to `*.files.gitbook.io` and die if the GitBook space is deleted; the Centurion NFT image
   (>2 MB) is skipped (`community-rewards/centurion.md:7`, HTML comment).

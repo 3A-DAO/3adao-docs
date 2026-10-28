@@ -5,6 +5,12 @@ section: 3A Protocol
 order: 101
 ---
 
+<!-- archive-notice -->
+> **Archived.** The 3A lending protocol and EURO3 on Linea and Polygon were phased out in 2024: no new loans from
+> 1 October 2024, and all remaining vaults closed on 30 November 2024
+> ([3A DAO's announcement](https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8)). This page is kept
+> for reference and describes the protocol as it was. Do not send funds to the contracts it lists.
+
 3A is a decentralized lending protocol offering efficient leverage with no recurring interest for crypto and on-chain Real World Assets, ensuring enterprise-grade security. It is non-custodial and permissionless, enabling users to leverage their long position, which is particularly attractive for yield-bearing assets like liquid-staked tokens, LP tokens, tokenized bonds and treasuries.
 
 Users deposit whitelisted crypto-assets (e.g., stETH) as collateral into a smart contract called vault, allowing them to mint and withdraw EURO3 stablecoin, pegged to the Euro. EURO3 is then used to buy and deposit more collateral. In order to avoid liquidation, vaults must maintain a required  [Health Factor](/3a-protocol/whitelisting-criteria/risk-sensitive-parameters) (HF) determined by the 3A data-driven risk model.

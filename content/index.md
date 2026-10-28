@@ -26,9 +26,12 @@ More: [Selling OPS tokens](/swap/sell), [Reading the page](/swap/reading-the-pag
 
 If your wallet shows a security warning on any page that asks you to connect or approve, stop. Do not click through it. Contact 3A DAO.
 
-## The 3A protocol
+## The 3A protocol (archived)
 
-For EURO3, vaults, the Stability Pool, liquidations and the A3A token, start at [Welcome to 3A](/3a-protocol/welcome-to-3a).
+The 3A lending protocol and EURO3 on Linea and Polygon were phased out in 2024, and the last vaults closed on
+30 November 2024 ([announcement](https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8)). Its
+documentation is kept for reference: EURO3, vaults, the Stability Pool, liquidations, the A3A token, contracts and
+audits start at [Welcome to 3A](/3a-protocol/welcome-to-3a).
 
 ## For AI agents
 

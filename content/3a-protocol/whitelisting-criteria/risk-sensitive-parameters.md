@@ -5,6 +5,12 @@ section: Protocol: Whitelisting
 order: 140
 ---
 
+<!-- archive-notice -->
+> **Archived.** The 3A lending protocol and EURO3 on Linea and Polygon were phased out in 2024: no new loans from
+> 1 October 2024, and all remaining vaults closed on 30 November 2024
+> ([3A DAO's announcement](https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8)). This page is kept
+> for reference and describes the protocol as it was. Do not send funds to the contracts it lists.
+
 In order to ensure that the protocol issues high-quality loans, there are a number of risk-sensitive parameters that can be tuned to trade-off security for capital efficiency. Those limits are similar to risk limits and stress test parameters used in traditional banking systems.
 
 **Minimum Collateral Ratio (MCR)** - represents the amount of over-collateralization required for users to borrow EURO3. It is calculated as the ratio between the value of the collateral (number of tokens \* token price) divided by the EURO3 debt. The EURO3 is always valued at 1 EURO for this calculation. The MCR is set on a per-asset basis and adjusted when market conditions change dramatically.

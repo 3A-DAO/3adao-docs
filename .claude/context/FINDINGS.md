@@ -45,5 +45,16 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
   `communication/contact-us.md`); neither checked for expiry. "(see Disclaimer)" on `welcome-to-3a.md` points nowhere.
 - **Fix direction**: ask 3A DAO for the current official links.
 
+### F-006 · The protocol the ported pages describe was shut down in 2024 · FIXED (notice)
+- **Symptom**: GitBook pages read as a live product ("To borrow EURO3, all you need is a wallet…").
+- **Root cause**: 3A DAO phased out the lending protocol and EURO3 on Linea and Polygon (no new loans from
+  2024-10-01, all vaults closed 2024-11-30), per its own post
+  https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8. GitBook was never updated.
+- **Fix**: every page under `content/3a-protocol/` opens with an "Archived" blockquote (marker
+  `<!-- archive-notice -->`, so a re-port can find it), and `content/index.md` labels the section archived.
+  The notice is in the markdown, not the HTML template, so the `.md` twins agents read carry it too.
+- **Open**: the same post says the RedBelly testnet app and the DAG bridge continue; the RedBelly testnet page is
+  archived along with the rest until someone confirms its state.
+
 ---
 _Add new confirmed findings above this line. Cite a `file:line` or ruling for every claim._

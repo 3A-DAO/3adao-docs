@@ -5,6 +5,12 @@ section: 3A Protocol
 order: 112
 ---
 
+<!-- archive-notice -->
+> **Archived.** The 3A lending protocol and EURO3 on Linea and Polygon were phased out in 2024: no new loans from
+> 1 October 2024, and all remaining vaults closed on 30 November 2024
+> ([3A DAO's announcement](https://medium.com/@3aDAO/phasing-out-euro3-lending-f5869a3498a8)). This page is kept
+> for reference and describes the protocol as it was. Do not send funds to the contracts it lists.
+
 EURO3 is an over-collateralized, decentralized, variable supply payment coin pegged to the Euro.
 
 EURO3 is created by users minting EURO3 loans and it’s removed from circulation (burnt) when users repay their loan or redeem EURO3 for the collateral assets.

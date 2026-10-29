@@ -17,6 +17,9 @@ Markdown source of truth for **[docs.3adao.org](https://docs.3adao.org)**.
 Edit a file in `content/`, open a pull request, and once it is merged to `main` Vercel rebuilds the site. There is
 exactly one copy of every sentence: the repo. The site is a build artefact.
 
+The repo is public to read. `main` is protected: every change goes through a pull request that 3A DAO approves, and
+direct pushes are refused. Every page links to its source file, an edit link and the issue tracker.
+
 ## Layout
 
 ```

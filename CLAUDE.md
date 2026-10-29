@@ -46,7 +46,7 @@ pure/effect + verification rules are in `.claude/context/AGENT-CONTRACTS.md`.
 
 - **The swap's ENGINEERING notes.** This repo is the user-facing surface; the swap's internals live in
   `3A-DAO/3adao-ops-swap` and its own `.claude/context/` store. Read that store before writing a swap page.
-  ⚠️ **The site is public, and this repo may become public.** Do not name private repos' internals, internal
+  ⚠️ **The site and this repo are public (repo since 2026-10-29).** Do not name private repos' internals, internal
   hosts, operator wallets, Safe addresses or filesystem paths in it — not in `content/`, and not in `.claude/`.
 - **`dist/`.** It is gitignored and built by Vercel from `content/` on every deploy. A stale
   local `dist/` misleads only you. `npm run check` is still worth running; it is just not a

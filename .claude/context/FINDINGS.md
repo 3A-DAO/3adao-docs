@@ -68,9 +68,11 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
   change. ops-swap F-051.
 - **Fix**: guides updated to ops-swap `af6fcca`. All 305 quoted strings in `content/swap/*.md` were checked against the
   rendered production page and the production source: those two were the only stale ones.
-- **Keep true**: OPLAI and OPSAI move in opposite directions, so a guide states direction first and keeps "not
-  one-for-one" with OPSAI. No exposure number. No ISIN, custodian or start date for OPSSOL, OPLAI or OPSAI: no source
-  we hold states them. Reserve coverage is described as a condition, never as a list of tokens, so it stays true when
+- **Keep true**: OPLAI and OPSAI move in opposite directions, so a guide states direction first, and
+  says neither moves one-for-one (tester, live venue read 2026-11-01: OPLAI notional above account value, OPSAI below
+  it). No exposure number on any page. OPLAI and OPSAI pages name no ISIN, custodian or start date. OPSSOL's page gives
+  no ISIN code or start date, but its default pitch says "a security with an ISIN" and "held by BitGo", so the docs must
+  not say it names no custodian: `content/swap/what-is-the-swap.md` said so on `main` until this fix. Reserve coverage is described as a condition, never as a list of tokens, so it stays true when
   the report changes.
 
 ---

@@ -28,11 +28,11 @@ These are not momentum strategies. Each is a rule-based basket of AI infrastruct
 - **OPLAI** moves with the basket. "When these stocks rise the token rises, and when they fall it falls. It does not rotate to shorts." The page names it "Optima AI Stocks Bull".
 - **OPSAI** moves against the basket. "It gains when these stocks fall and loses when they rise, though not one-for-one, so a rally in AI stocks is a loss here." The page adds that its exposure "is set by the strategy and can change". The page names it "Optima AI Stocks Bear".
 
-The rules are the same for both: "Constituents are screened monthly for on-venue liquidity and market cap, held at equal weight and reset at the start of each month."
+Neither token should be read as moving one-for-one with the basket. How far each one moves depends on the exposure the strategy holds. The rules are the same for both: "Constituents are screened monthly for on-venue liquidity and market cap, held at equal weight and reset at the start of each month."
 
 ### What the page does and does not state
 
-For OPSSOL, OPLAI and OPSAI the page does not state an ISIN, a custodian or a start date, and it sends you to optima.financial for the terms.
+For OPLAI and OPSAI the page does not state an ISIN, a custodian or a start date. For OPSSOL it gives no ISIN code or start date, though its pitch calls the token "a security with an ISIN" and says the assets are "held by BitGo". For all three, the page sends you to optima.financial for the terms.
 
 The page lists the tokens whose pool can currently fill a buy. A token whose pool is empty is hidden. A token the page has no description for gets a box that says "This page does not yet carry a description of" that token, with a link to the issuer.
 

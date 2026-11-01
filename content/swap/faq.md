@@ -1,9 +1,11 @@
 ---
 title: FAQ
-description: Short answers to common questions about buying OPSBTC and OPSSOL on swap.3adao.org.
+description: Short answers to common questions about buying OPS tokens on swap.3adao.org.
 section: Swap
 order: 20
 ---
+
+**What is the difference between OPLAI and OPSAI?** They move in opposite directions. OPLAI moves with a basket of AI infrastructure stocks. OPSAI moves against it, though not one-for-one, so a rally in those stocks is a loss on OPSAI. See [What the tokens are](/swap/what-is-the-swap).
 
 **Do I need an account or KYC?** Not on the swap. The page says "No account and no KYC" for the pool route. Buying at NAV on optima.financial is a separate route for KYC-verified users.
 

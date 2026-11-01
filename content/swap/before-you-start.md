@@ -1,6 +1,6 @@
 ---
 title: Before you start
-description: What you need before you buy OPSBTC or OPSSOL on the swap - a wallet, the right chain, gas, and what you will be asked to sign.
+description: What you need before you buy an OPS token on the swap - a wallet, the right chain, gas, and what you will be asked to sign.
 section: Swap
 order: 11
 ---

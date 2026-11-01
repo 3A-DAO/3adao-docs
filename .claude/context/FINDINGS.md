@@ -59,5 +59,19 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
 - **Open**: the same post says the RedBelly testnet app and the DAG bridge continue; the RedBelly testnet page is
   archived along with the rest until someone confirms its state.
 
+### F-007 · Swap guides drift when the swap changes · FIXED (2026-11-01), recurs by design
+- **Symptom**: `content/swap/reading-the-page.md` quoted "Independent check" and "Size trades conservatively until
+  they agree." after the swap renamed the first and reworded the second. The guides also named two tokens and called
+  every token a momentum strategy after pools 10 and 11 (OPLAI, OPSAI) went on sale.
+- **Root cause**: the guides quote the live page and nothing ties them to it. The swap's token list is feed-driven
+  (ops-swap `src/App.tsx:34`, `src/lib/markets.ts#isTradeable`), so a token can go on sale with no release and no docs
+  change. ops-swap F-051.
+- **Fix**: guides updated to ops-swap `af6fcca`. All 305 quoted strings in `content/swap/*.md` were checked against the
+  rendered production page and the production source: those two were the only stale ones.
+- **Keep true**: OPLAI and OPSAI move in opposite directions, so a guide states direction first and keeps "not
+  one-for-one" with OPSAI. No exposure number. No ISIN, custodian or start date for OPSSOL, OPLAI or OPSAI: no source
+  we hold states them. Reserve coverage is described as a condition, never as a list of tokens, so it stays true when
+  the report changes.
+
 ---
 _Add new confirmed findings above this line. Cite a `file:line` or ruling for every claim._

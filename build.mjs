@@ -278,7 +278,7 @@ for (const f of downloads) files.set(relative(CONTENT, f).replace(/\\/g, "/"), r
 files.set(
   "llms.txt",
   `# 3A DAO Docs\n\n` +
-    `> Documentation for 3A DAO: the OPS swap at swap.3adao.org (buy OPSBTC and OPSSOL\n` +
+    `> Documentation for 3A DAO: the OPS swap at swap.3adao.org (buy OPS tokens\n` +
     `> with USDC from Arbitrum or another EVM chain) and the 3A borrowing protocol (EURO3,\n` +
     `> vaults, the Stability Pool and the A3A token).\n\n` +
     `Every page below is also available as markdown by appending .md to its path, and is\n` +

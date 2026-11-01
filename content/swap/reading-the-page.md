@@ -22,12 +22,12 @@ Every number on the page is derived from live data. The page shows when it was m
 
 - "Total value in pool", the amount of OPS held and the USDC held.
 - "Pool fee": the percentage the Uniswap pool charges on each trade.
-- "Independent check": a second price source.
-- If the page's depth figure and the independent source disagree it says so and adds: "Size trades conservatively until they agree."
+- "Independent price": the price of one token, from a second source. It is not a depth figure, so don't compare it with the dollar amounts above it.
+- If the page's depth figure and the independent source disagree it says so and adds: "That source can lag a pool that has not traded, so check the pool contract before a large trade."
 
 ## "What backs the token" and "Proof of reserve"
 
-"What backs the token" shows the strategy name, "Value per token", "Tokens outstanding", "Strategy value", "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. See [What the swap is](/swap/what-is-the-swap).
+"What backs the token" shows the strategy name, "Value per token", "Tokens outstanding", "Strategy value", "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. If the reserve report does not count the token you selected, it says so and shows none of these. See [What the swap is](/swap/what-is-the-swap).
 
 Each box ends with a line such as "Reserves measured 3 min ago". If a figure is older than its budget, the page says: "older than its 300s budget, so treat it as indicative rather than current." The number of seconds varies.
 

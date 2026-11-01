@@ -28,7 +28,7 @@ These are not momentum strategies. Each is a rule-based basket of AI infrastruct
 - **OPLAI** moves with the basket. When these stocks rise the token rises, and when they fall it falls. It does not rotate to shorts. The page names it "Optima AI Stocks Bull".
 - **OPSAI** moves against the basket. "It gains when these stocks fall and loses when they rise, though not one-for-one, so a rally in AI stocks is a loss here." The page adds that its exposure "is set by the strategy and can change". The page names it "Optima AI Stocks Bear".
 
-Neither token should be read as moving one-for-one with the basket. A move can be larger or smaller than the basket's, depending on the exposure the strategy holds. The rules are the same for both: the constituents are screened monthly for liquidity and market cap and set to equal weight at the start of each month, and the weights drift between resets.
+Neither token should be read as moving one-for-one with the basket. A move can be larger or smaller than the basket's, depending on the exposure the strategy holds. The rules are the same for both: the constituents are screened monthly for liquidity and market cap, with equal weight as the target at each monthly reset. Live weights can differ from it.
 
 ### What the page does and does not state
 

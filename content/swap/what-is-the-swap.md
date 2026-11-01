@@ -25,10 +25,10 @@ The swap page describes these like this: they "track actively managed trading st
 
 These are not momentum strategies. Each is a rule-based basket of AI infrastructure stocks, built from equity perpetuals listed on Hyperliquid, and the page says the hyperscalers are deliberately left out.
 
-- **OPLAI** moves with the basket. "When these stocks rise the token rises, and when they fall it falls. It does not rotate to shorts." The page names it "Optima AI Stocks Bull".
+- **OPLAI** moves with the basket. When these stocks rise the token rises, and when they fall it falls. It does not rotate to shorts. The page names it "Optima AI Stocks Bull".
 - **OPSAI** moves against the basket. "It gains when these stocks fall and loses when they rise, though not one-for-one, so a rally in AI stocks is a loss here." The page adds that its exposure "is set by the strategy and can change". The page names it "Optima AI Stocks Bear".
 
-Neither token should be read as moving one-for-one with the basket. How far each one moves depends on the exposure the strategy holds. The rules are the same for both: "Constituents are screened monthly for on-venue liquidity and market cap, held at equal weight and reset at the start of each month."
+Neither token should be read as moving one-for-one with the basket. A move can be larger or smaller than the basket's, depending on the exposure the strategy holds. The rules are the same for both: the constituents are screened monthly for liquidity and market cap and set to equal weight at the start of each month, and the weights drift between resets.
 
 ### What the page does and does not state
 

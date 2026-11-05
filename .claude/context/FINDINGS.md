@@ -68,6 +68,11 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
   change. ops-swap F-051.
 - **Fix**: guides updated to ops-swap `af6fcca`. All 305 quoted strings in `content/swap/*.md` were checked against the
   rendered production page and the production source: those two were the only stale ones.
+- **Again at ops-swap `b31756c`** (swap PR #12, new layout, 2026-11-05): one chart per token, a card selects the token,
+  a picker on the heading, token and route locked during a trade (`src/components/TokenChartList.tsx`,
+  `src/components/TradeSection.tsx`). The guides described one chart and one way to pick. Fixed. ⚠️ A source match can
+  hide a stale quote: "can sit a little apart from the current figure above it" is still in `SeriesChart.tsx`, but
+  only for the non-compact chart the page no longer renders. Check quotes against the RENDERED page, source second.
 - **Keep true**: OPLAI and OPSAI move in opposite directions, so a guide states direction first, and
   says neither moves one-for-one, and gives equal weight as the target only, because live weights can differ from it (tester, live venue read 2026-11-01: OPLAI notional above account value, OPSAI below
   it). No exposure number on any page. OPLAI and OPSAI pages name no ISIN, custodian or start date. OPSSOL's page gives

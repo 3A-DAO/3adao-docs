@@ -61,7 +61,7 @@ Two numbers matter, and they are not the same number.
 - **The pool price** is what the Uniswap pool charges right now. It moves when people trade.
 - **NAV** is the net asset value of the strategy behind the token. The page shows it as "Value per token" under "What backs the token".
 
-The chart is titled "Pool price against strategy value". One line is the pool price and the other is the strategy value. The gap between them is how far the pool sits from NAV. The page says an arbitrage bot trades against any gap to pull the pool back toward NAV. It also says the pool price is not guaranteed to equal NAV, and that a gap is no guarantee of the price you can get when you sell.
+Each token has its own chart, under the heading "All tokens · pool price against strategy value". One line is the pool price and the other is the strategy value. The gap between them is how far the pool sits from NAV. The page says an arbitrage bot trades against any gap to pull the pool back toward NAV. It also says the pool price is not guaranteed to equal NAV, and that a gap is no guarantee of the price you can get when you sell.
 
 If you want to buy at NAV rather than at the pool price, the page points to the Optima app at optima.financial. The page says that route is for KYC-verified users and is not available on the swap. See [Reading the page](/swap/reading-the-page) for every number on screen.
 
@@ -78,4 +78,4 @@ Proof of reserve describes the strategy's assets. It says nothing about the pool
 - **Arbitrum One** is where the tokens and the pool live. Buying with USDC here is the direct route.
 - **Other chains** are available only through NEAR Intents, and only for the chains and tokens the page lists at the moment you look. The list changes. See [Before you start](/swap/before-you-start).
 
-The page shows prices and the chart with no wallet connected. You need a wallet only to review and buy.
+The page shows prices and the charts with no wallet connected. You need a wallet only to review and buy.

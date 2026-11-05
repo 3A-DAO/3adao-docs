@@ -7,16 +7,18 @@ order: 15
 
 Every number on the page is derived from live data. The page shows when it was measured. A successful response is not a promise that a number is current, so check the timestamps.
 
-## The chart: "Pool price against strategy value"
+## The charts: "All tokens · pool price against strategy value"
+
+The left of the page shows one chart for every token on sale, each titled with the token and its strategy name. Click a chart to select that token in the swap panel. The selected chart is marked "In the swap", and the others read "Buy" with the token's name. On a phone the swap panel sits above the charts, and picking a chart scrolls back to it.
 
 - One line is the **pool price**, what the Uniswap pool charges. The pool line is stepped, because a pool price only changes when someone trades.
 - The other line is the **value**, the strategy's net asset value per token (NAV). It is smooth, because NAV is revalued continuously.
-- The gap between the lines is how far the pool sits from NAV. The readout above the chart shows "pool", "value" and the gap for the point you hover over, or the latest one.
-- The buttons set the time range: 24H, 1W, 1M, 3M and ALL.
-- The caption says what is drawn, for example "126 drawn of 289 readings". Long periods are thinned, but every drawn point is a real reading and the highs and lows are kept.
+- The gap between the lines is how far the pool sits from NAV. The readout above each chart shows "pool", "value" and the gap for the point you hover over, or the latest one.
+- One set of buttons above the list sets the time range for every chart at once: 24H, 1W, 1M, 3M and ALL, so the charts stay comparable.
+- Each chart's caption says what is drawn, for example "126 drawn of 289 readings". Long periods are thinned, but every drawn point is a real reading and the highs and lows are kept.
 - If the pool did not trade, the page says "The pool price is flat because the pool has not traded in this window."
 - A history that is short stays short. The page says "nothing is back-filled".
-- A chart point shows the strategy's value at the moment a trade was seen, so the line "can sit a little apart from the current figure above it".
+- A chart point shows the strategy's value at the moment a trade was seen, so, as the note under the list says, "a line can sit a little apart from the current figures below".
 
 ## "Pool depth"
 
@@ -27,7 +29,7 @@ Every number on the page is derived from live data. The page shows when it was m
 
 ## "What backs the token" and "Proof of reserve"
 
-"What backs the token" shows the strategy name, "Value per token", "Tokens outstanding", "Strategy value", "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. If the reserve report does not count the token you selected, it says so and shows none of these. See [What the swap is](/swap/what-is-the-swap).
+"What backs the token" shows the strategy name, "Value per token", "Tokens outstanding", "Strategy value", "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. If the reserve report does not count the token you selected, it says so and shows none of these. The swap panel also links to the report, "Proof of reserve ↗", which opens optima.financial in a new tab. See [What the swap is](/swap/what-is-the-swap).
 
 Each box ends with a line such as "Reserves measured 3 min ago". If a figure is older than its budget, the page says: "older than its 300s budget, so treat it as indicative rather than current." The number of seconds varies.
 

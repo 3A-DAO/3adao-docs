@@ -15,7 +15,7 @@ Do these checks first. Most stuck buys come from skipping one of them.
 
 The swap connects to a browser wallet. You do not need an account, and the page says there is "No account, no minimum, no lock-up". Cross-chain buys are covered below.
 
-You can look at prices, the chart and a quote without connecting. The page says: "Quotes are test runs: nothing is created and no funds move. A wallet is needed only to Review and buy."
+You can look at prices, the charts and a quote without connecting. The page says: "Quotes are test runs: nothing is created and no funds move. A wallet is needed only to Review and buy."
 
 ## If your wallet shows a security warning
 

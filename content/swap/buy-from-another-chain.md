@@ -1,6 +1,6 @@
 ---
 title: Buy from another chain
-description: How to buy OPSBTC or OPSSOL with a token on another chain using one signature and one deposit, what happens behind the scenes, and how long it takes.
+description: How to buy an OPS token with a token on another chain using one signature and one deposit, what happens behind the scenes, and how long it takes.
 section: Swap
 order: 13
 ---

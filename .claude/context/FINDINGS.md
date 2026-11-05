@@ -59,5 +59,26 @@ Format: `STATUS` ∈ OPEN | FIX-PLANNED | FIXED | WONTFIX.
 - **Open**: the same post says the RedBelly testnet app and the DAG bridge continue; the RedBelly testnet page is
   archived along with the rest until someone confirms its state.
 
+### F-007 · Swap guides drift when the swap changes · FIXED (2026-11-01), recurs by design
+- **Symptom**: `content/swap/reading-the-page.md` quoted "Independent check" and "Size trades conservatively until
+  they agree." after the swap renamed the first and reworded the second. The guides also named two tokens and called
+  every token a momentum strategy after pools 10 and 11 (OPLAI, OPSAI) went on sale.
+- **Root cause**: the guides quote the live page and nothing ties them to it. The swap's token list is feed-driven
+  (ops-swap `src/App.tsx:34`, `src/lib/markets.ts#isTradeable`), so a token can go on sale with no release and no docs
+  change. ops-swap F-051.
+- **Fix**: guides updated to ops-swap `af6fcca`. All 305 quoted strings in `content/swap/*.md` were checked against the
+  rendered production page and the production source: those two were the only stale ones.
+- **Again at ops-swap `b31756c`** (swap PR #12, new layout, 2026-11-05): one chart per token, a card selects the token,
+  a picker on the heading, token and route locked during a trade (`src/components/TokenChartList.tsx`,
+  `src/components/TradeSection.tsx`). The guides described one chart and one way to pick. Fixed. ⚠️ A source match can
+  hide a stale quote: "can sit a little apart from the current figure above it" is still in `SeriesChart.tsx`, but
+  only for the non-compact chart the page no longer renders. Check quotes against the RENDERED page, source second.
+- **Keep true**: OPLAI and OPSAI move in opposite directions, so a guide states direction first, and
+  says neither moves one-for-one, and gives equal weight as the target only, because live weights can differ from it (tester, live venue read 2026-11-01: OPLAI notional above account value, OPSAI below
+  it). No exposure number on any page. OPLAI and OPSAI pages name no ISIN, custodian or start date. OPSSOL's page gives
+  no ISIN code or start date, but its default pitch says "a security with an ISIN" and "held by BitGo", so the docs must
+  not say it names no custodian: `content/swap/what-is-the-swap.md` said so on `main` until this fix. Reserve coverage is described as a condition, never as a list of tokens, so it stays true when
+  the report changes.
+
 ---
 _Add new confirmed findings above this line. Cite a `file:line` or ruling for every claim._

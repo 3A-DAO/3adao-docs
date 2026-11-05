@@ -1,7 +1,7 @@
 ---
 title: Selling OPS tokens
 nav: Sell
-description: How to sell OPSBTC or OPSSOL for USDC on Arbitrum from your own wallet, and what the swap does not offer for selling.
+description: How to sell an OPS token for USDC on Arbitrum from your own wallet, and what the swap does not offer for selling.
 section: Swap
 order: 14
 ---
@@ -13,8 +13,8 @@ What it does **not** do: it has no screen for selling to another chain. The cros
 ## Steps
 
 1. Open [swap.3adao.org](https://swap.3adao.org) and leave "From (pay with)" on "Arbitrum · direct (Uniswap)".
-2. Press the round arrow between the two boxes. Its label is "Switch to selling OPS". The card heading changes to "Sell OPSBTC" (or OPSSOL), and the top box now holds the OPS token.
-3. Choose the token with the token button, enter an amount, or press "Max" to fill your exact balance. The page shows "Balance: X OPSBTC".
+2. Press the round arrow between the two boxes. Its label is "Switch to selling OPS". The card heading changes to "Sell OPSBTC" (or the token selected), and the top box now holds the OPS token.
+3. Choose the token with the token button or by clicking its chart, enter an amount, or press "Max" to fill your exact balance. The page shows "Balance: X OPSBTC".
 4. Read the quote rows. They are the same as for a buy. See [Reading the page](/swap/reading-the-page). The "Minimum received" is in USDC.
 5. Connect your wallet and switch to Arbitrum One if the page asks.
 6. Press "Allow Uniswap to use your OPSBTC", confirm it in your wallet, and wait while it reads "Waiting for the approval to confirm…".

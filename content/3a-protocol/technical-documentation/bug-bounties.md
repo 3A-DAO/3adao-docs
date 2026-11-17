@@ -13,7 +13,7 @@ order: 133
 
 ### Scope <a href="#scope" id="scope"></a>
 
-The bounty program covers exclusively the smart-contract portion of the protocol. The issues should be submitted as tickets on [Discord](https://discord.gg/cmMUJTrV) ​
+The bounty program covers exclusively the smart-contract portion of the protocol. The issues should be submitted as tickets on [Discord](https://discord.gg/7PcFq4MBkF) ​
 
 ### Rewards <a href="#rewards" id="rewards"></a>
 

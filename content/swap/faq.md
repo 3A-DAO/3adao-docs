@@ -37,7 +37,7 @@ order: 20
 
 **Can I sell and receive money on another chain?** Not on this page.
 
-**Why is the pool price different from the Optima app price?** The pool price is set by trading in a small pool. The page does not promise they match. Neither price is the NAV: the page uses NAV, shown as "Strategy value", for the whole strategy's value, not a price per token. See [Reading the page](/swap/reading-the-page).
+**Why is the pool price different from the Optima app price?** The pool price is set by trading in a small pool. The page does not promise they match. Neither price is the NAV. NAV is the whole strategy's value, a total rather than a price per token, and the page shows it as "Strategy value". See [Reading the page](/swap/reading-the-page).
 
 **Does 3A DAO hold my funds?** On the direct route, no. On the cross-chain route your money passes through a NEAR Intents account, run by Aurora, for a short time, and stays there if the swap does not run. 3A DAO does not run it.
 

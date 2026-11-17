@@ -34,13 +34,26 @@ Once the status is final, a button appears. It reads "Buy again" after SUCCESS a
 
 ## EXPIRED is not always final
 
-A quote closes 10 minutes after it is created. When it closes with no deposit, the status reads EXPIRED, and nothing moved. The page says:
-
-"The deposit window closed. If you sent no deposit, nothing moved. If your deposit arrived near the end, NEAR Intents may still complete the buy in the next minutes; if it doesn't, the USDC stays in your NEAR Intents account on Arbitrum, and “Send it back to my wallet” under “Your activity” returns it."
+The page gives each buy a deposit window of 20 minutes from when it is created. When the window closes before the bridge has picked up a deposit, the status reads EXPIRED. If you sent nothing, nothing moved.
 
 This is not theory. In one tested buy the deposit landed 33 seconds before the close and the status read EXPIRED at the close. Two minutes later NEAR Intents ran the swap and the status changed to SUCCESS, with the tokens in the buyer's wallet.
 
-So the page keeps waiting. For 20 minutes after the close, an EXPIRED buy still counts as open. The page keeps checking, and it does not offer to send leftover USDC back, because that could race the swap for the same money. How long EXPIRED can still turn into SUCCESS is not documented by NEAR Intents. Do not conclude a buy failed because it read EXPIRED. Wait the 20 minutes and look at the status again.
+### What decides whether an EXPIRED buy can still complete
+
+NEAR Intents keeps trying to complete an EXPIRED buy only if your deposit's transaction hash was recorded with it. It then keeps checking for up to 7 days after the buy was created. If no hash was recorded, EXPIRED is final, even if your deposit lands later.
+
+- **If you pressed the page's Send button,** the page records the hash for you.
+- **If you sent the deposit yourself,** paste its transaction hash into the box "Already sent it? Paste the transaction hash, so NEAR Intents can match your deposit to this buy." Do it before the window closes. When it is accepted, the page says "Recorded. NEAR Intents has this deposit's transaction hash".
+
+What the page then says depends on what it knows:
+
+- **Hash recorded in time:** "The deposit window closed before the bridge picked up your deposit, but this is not final: its transaction hash is recorded, so NEAR Intents keeps checking and may still complete the buy until" a date and time in UTC, 7 days after the buy was created. "Nothing more is needed from you."
+- **Hash recorded only after the close:** the page says "it is not known whether NEAR Intents still picks up a hash recorded after the close", and to contact NEAR Intents support if the buy hasn't completed by that date.
+- **No hash recorded:** "The deposit window closed and no deposit transaction was recorded for this buy, so it is over. If you sent nothing, nothing moved." If you did send it, the page asks you to paste the hash into the box and contact NEAR Intents support with the execution id and that hash.
+
+In "Your activity" the page cannot tell whether a hash was recorded, so it states the rule instead and adds that "“Send it back to my wallet” under “Your activity”" returns USDC that reached your NEAR Intents account without being swapped.
+
+For 20 minutes after the close, the page still treats an EXPIRED buy as open. It keeps checking, and it does not offer to send leftover USDC back, because that could race the swap for the same money. Do not conclude a buy failed the moment it reads EXPIRED.
 
 If you never sent a deposit, EXPIRED is final and nothing is owed. In one tested case the reason was that the wallet had no gas coin on the origin chain, so the deposit could not be sent.
 

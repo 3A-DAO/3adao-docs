@@ -31,18 +31,19 @@ If the page says "Buying from other chains is paused for now. Pay with USDC on A
     - The fee rows. See [Risks and fees](/swap/risks-and-fees).
     - "Expected time" in seconds.
     - A note about the USDC that will not be swapped. See [Leftover USDC](/swap/leftover-usdc).
-    - In amber: "After you sign, you send the USDC yourself, from your wallet on Base, within 6 minutes. That transfer is a normal Base transaction, so your wallet needs a little ETH on Base to pay its network fee. Check before you sign."
+    - In amber: "After you sign, you send the USDC yourself, from your wallet on Base, within 16 minutes. That transfer is a normal Base transaction, so your wallet needs a little ETH on Base to pay its network fee. Check before you sign."
 11. **Press "Confirm and sign".** The button reads "Check your wallet…" and the page says "Signing… approve the message in your wallet." Your wallet shows a message to sign. There is no gas cost for this. If the review is more than a minute old, the page does not sign. It fetches a new quote and says: "This quote was more than a minute old, so we fetched a fresh one and nothing was signed. The price may have moved: check the figures above, then confirm again."
 12. **Send the deposit.** Only after your signature is accepted does the page show "send the funds", with the exact amount and a deposit address. Send exactly that amount, on that chain, of that token. Two ways:
     - Press the button "Send <amount> <token> from your wallet". Your wallet switches to the origin chain and asks you to confirm one transfer.
     - Or copy the address with "Copy" and send it yourself. The page also prints the token's contract on that chain. Many chains have two tokens with the same name, so check it.
-13. **Wait.** After the transfer the page says "Sent from your wallet. Don't send it again." and shows the status. See [Track your buy](/swap/track-your-buy).
+13. **If you sent it yourself, paste the transaction hash.** Under the address the page asks: "Already sent it? Paste the transaction hash, so NEAR Intents can match your deposit to this buy." Do this. If the buy reaches EXPIRED, NEAR Intents keeps trying to complete it only when the hash was recorded. When you use the Send button the page records the hash for you. See [Track your buy](/swap/track-your-buy#expired-is-not-always-final).
+14. **Wait.** After the transfer the page says "Sent from your wallet. Don't send it again." and shows the status. See [Track your buy](/swap/track-your-buy).
 
 The deposit address is for this one transfer. Send it by the time shown ("Send it by 12:34 UTC"). The page counts that time down and, near the end, says "too late — do not send". Do not send after that.
 
 ## Why the page shows the deposit address only after you sign
 
-Your signature is what allows your NEAR Intents account to run the swap. A deposit that arrives with no signature has nothing authorised to act on it. That is why the address stays hidden until the signature is accepted. If your wallet declines the signature the page says: "You declined the signature, so nothing can receive funds. Sign again when ready." Never send money to an address from another source that claims to be for this buy.
+Your signature is what allows your NEAR Intents account to run the swap. A deposit that arrives with no signature has nothing authorised to act on it. That is why the address stays hidden until the signature is accepted. If your wallet declines the signature the page says: "Your wallet declined the signature, so nothing can receive funds. Sign again when ready." Never send money to an address from another source that claims to be for this buy.
 
 ## What happens behind the scenes
 
@@ -59,7 +60,7 @@ In plain words:
 
 The review screen shows an "Expected time" in seconds, taken from NEAR Intents. In October 2026 one tested buy finished in under two minutes after the deposit. Another, deposited very near its deadline, first read EXPIRED and was completed a couple of minutes later (see [Track your buy](/swap/track-your-buy)). The page's own text says the status changes "usually within a minute or two" after the deposit is seen.
 
-You have a limited window to send the deposit. A quote closes 10 minutes after it is created. The page tells you to send within 6 minutes, because the bridge and the swap must both finish before the buy closes. A deposit that arrives too late "may buy nothing and stay in your NEAR Intents account on Arbitrum, or be refunded minus fees".
+You have a limited window to send the deposit. The page asks NEAR Intents for a deposit window of 20 minutes from when the buy is created. The page tells you to send within 16 minutes, because the bridge and the swap must both finish before the buy closes. A deposit that arrives too late "may buy nothing and stay in your NEAR Intents account on Arbitrum, or be refunded minus fees".
 
 ## One buy at a time
 

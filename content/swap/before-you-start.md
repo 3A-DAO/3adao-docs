@@ -37,7 +37,7 @@ You choose in the box called "From (pay with)". The list of chains and tokens is
 
 On 20 October 2026 the 3A team measured small test quotes. Base, Ethereum, Gnosis, Berachain and Plasma gave quotes for the tokens tried. BNB Chain, Optimism, Polygon, Avalanche, Scroll, Monad and X Layer refused every token. That list changes, so do not rely on it. When a quote is refused the page says so and nothing is created. The page's own advice is: "try another token or chain (Base and Ethereum are the most reliable), or pay with USDC on Arbitrum."
 
-The page also lists chains that are not EVM chains. To pay from one you need a wallet of that kind. The code supports a Solana wallet (Phantom or Solflare) and a NEAR wallet (Sender or Meteor). Only the EVM path has been verified end to end in the code. For Tron, Stellar and TON the page says: "Paying from this chain isn't supported yet". These guides cover EVM wallets only.
+Paying from a chain that is not an EVM chain, such as Solana or NEAR, is switched off on swap.3adao.org. When it is off, the page lists only EVM chains, and the service refuses a buy from any other chain with "Paying from this chain is switched off. Pay from an EVM chain, or with USDC on Arbitrum." The code supports a Solana wallet (Phantom or Solflare) and a list of NEAR wallets, including MyNearWallet, Meteor and Sender, but those routes have not been proven end to end. For chains the code does not support, the page says "Paying from this chain isn't supported yet". These guides cover EVM wallets only.
 
 ## Gas: the fee your wallet pays
 

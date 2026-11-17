@@ -1,7 +1,7 @@
 ---
 title: What the OPS swap is
 nav: What it is
-description: What swap.3adao.org sells, what each OPS token is and which way it moves, what the pool price and the NAV mean, and which chains it works on.
+description: What swap.3adao.org sells, what each OPS token is and which way it moves, what the pool price and the Optima app price mean, and which chains it works on.
 section: Swap
 order: 10
 ---
@@ -32,7 +32,7 @@ Neither token should be read as moving one-for-one with the basket. A move can b
 
 ### What the page does and does not state
 
-For OPLAI and OPSAI the page does not state an ISIN, a custodian or a start date. For OPSSOL it gives no ISIN code or start date, though its pitch calls the token "a security with an ISIN" and says the assets are "held by BitGo". For all three, the page sends you to optima.financial for the terms.
+For OPLAI and OPSAI the page does not state an ISIN, a custodian or a start date. For OPSSOL it gives no ISIN code or start date, though its pitch calls the token "a security with an ISIN" and says "The assets are controlled by BitGo wallets, executing rule-based strategies." For all three, the page sends you to optima.financial for the terms.
 
 The page lists the tokens whose pool can currently fill a buy. A token whose pool is empty is hidden. A token the page has no description for gets a box that says "This page does not yet carry a description of" that token, with a link to the issuer.
 
@@ -54,16 +54,18 @@ The page prints one of these two lines under "From (pay with)":
 
 How to do each: [Buy with USDC on Arbitrum](/swap/buy-with-usdc-on-arbitrum) and [Buy from another chain](/swap/buy-from-another-chain).
 
-## Pool price and NAV
+## Pool price and Optima app price
 
-Two numbers matter, and they are not the same number.
+Two prices matter, and they are not the same number.
 
 - **The pool price** is what the Uniswap pool charges right now. It moves when people trade.
-- **NAV** is the net asset value of the strategy behind the token. The page shows it as "Value per token" under "What backs the token".
+- **The Optima app price** is the price per token at which the Optima app buys and redeems the token. The page shows it as "Optima app price" under "What backs the token".
 
-Each token has its own chart, under the heading "All tokens · pool price against strategy value". One line is the pool price and the other is the strategy value. The gap between them is how far the pool sits from NAV. The page says an arbitrage bot trades against any gap to pull the pool back toward NAV. It also says the pool price is not guaranteed to equal NAV, and that a gap is no guarantee of the price you can get when you sell.
+Neither of these is the NAV. NAV is the net asset value of the whole strategy behind the token, a total in dollars, not a price per token. The page shows it as "Strategy value" in the same box.
 
-If you want to buy at NAV rather than at the pool price, the page points to the Optima app at optima.financial. The page says that route is for KYC-verified users and is not available on the swap. See [Reading the page](/swap/reading-the-page) for every number on screen.
+Each token has its own chart, under the heading "All tokens · pool price against the Optima app price". One line is the pool price and the other is the Optima app price. The gap between them is how far the pool sits from the app's price. The page says an arbitrage bot trades against any gap to pull the pool back toward the Optima app price. It also says the pool price is not guaranteed to equal the Optima app price, and that a gap is no guarantee of the price you can get when you sell.
+
+If you want to buy at the Optima app price rather than at the pool price, the page points to the Optima app at optima.financial. The page says that route is for KYC-verified users and is not available on the swap. See [Reading the page](/swap/reading-the-page) for every number on screen.
 
 ## Proof of reserve
 

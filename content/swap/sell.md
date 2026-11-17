@@ -23,7 +23,7 @@ What it does **not** do: it has no screen for selling to another chain. The cros
 
 ## Things to know before you sell
 
-- **You get the pool price, not NAV.** The pool price can sit below or above the value per token. The "Average price" row says how far, for example "(0.40% below NAV)". The page also says that buying and redeeming at NAV is possible for KYC-verified users on optima.financial, and not on the swap.
+- **You get the pool price, not the Optima app price.** The pool price can sit below or above the Optima app price. The "Average price" row says how far, for example "(0.40% below the Optima app price)". The page also says that buying and redeeming at the Optima app price is possible for KYC-verified users on optima.financial, and not on the swap.
 - **Your balance is checked.** If you enter more than you hold, the page shows "You have X. Enter that or less, or press Max.", offers no approval, and the button reads "Not enough OPSBTC". Use "Max" rather than a rounded number from your wallet, because a rounded figure can be higher than your real balance.
 - **Only the holder can sell.** The page warns that tokens sent to an address that is not your connected wallet cannot be sold from this site by anyone but the holder. If the recipient of a buy was a Safe or another contract, selling from here may not work.
 - **A large sell moves the price.** The pool is small. The price impact warnings apply to selling too, and an amount larger than the pool can take is refused: "This is more than the pool holds: it has about X USDC, and this trade would need all of it or more. Enter a smaller amount."

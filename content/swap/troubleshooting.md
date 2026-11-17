@@ -47,11 +47,11 @@ Start with the message on the page. Find it below. In every case: if your wallet
 
 "This wallet already has an unfinished buy with NEAR Intents, and only one can be open at a time. Nothing has been charged."
 
-NEAR Intents allows one open buy per wallet. A buy you started but did not finish, for example by declining the signature, holds that slot until its quote closes. That is up to 10 minutes after it was created. Another reason is that a buy was refused after NEAR Intents had created it. The page says when your wallet is free, for example "An unfunded buy closes at 13:36 UTC". Wait until then and start a new buy. If you declined the signature and the same review is still open, press "Confirm and sign" again. The page signs the same buy instead of creating a second one, as long as the quote has more than a minute left.
+NEAR Intents allows one open buy per wallet. A buy you started but did not finish, for example by declining the signature, holds that slot until its quote closes. That is up to 20 minutes after it was created. Another reason is that a buy was refused after NEAR Intents had created it. The page says when your wallet is free, for example "An unfunded buy closes at 13:36 UTC". Wait until then and start a new buy. If you declined the signature and the same review is still open, press "Confirm and sign" again. The page signs the same buy instead of creating a second one, as long as the quote has more than a minute left.
 
 ## At the signature
 
-**"You declined the signature, so nothing can receive funds. Sign again when ready."** You pressed reject. Nothing was sent. The deposit address is not shown, and you must not send money.
+**"Your wallet declined the signature, so nothing can receive funds. Sign again when ready."** You pressed reject, or your wallet's own safety check blocked the request. Nothing was sent. The deposit address is not shown, and you must not send money.
 
 **"Your signature wasn't accepted, so nothing can receive funds. Don't send anything."** Start again.
 
@@ -65,7 +65,9 @@ NEAR Intents allows one open buy per wallet. A buy you started but did not finis
 
 **"Your wallet has X, less than the Y this buy needs, so nothing was sent."** Send exactly the amount from another wallet before the close time, or let this buy close and start a smaller one.
 
-**"You declined it in your wallet, so nothing was sent."** Press the button again or send by hand.
+**"Your wallet declined it, so nothing was sent."** Press the button again or send by hand. If you send by hand, paste the transaction hash into the box "Already sent it? Paste the transaction hash" afterwards.
+
+**"Already sent it? Paste the transaction hash, so NEAR Intents can match your deposit to this buy."** Paste the hash of the transfer you sent. If the buy expires, NEAR Intents keeps trying to complete it only when the hash was recorded. See [Track your buy](/swap/track-your-buy).
 
 **"Too little time is left for the bridge and the swap to finish before this buy closes… so don't send now."** Do not send. Wait for it to close and start a new buy.
 

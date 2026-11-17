@@ -1,18 +1,18 @@
 ---
 title: 3A DAO Docs
 nav: Overview
-description: How to use the OPS swap at swap.3adao.org, and how the 3A borrowing protocol works.
+description: How to use the OPS swap at swap.3adao.org, and the archived docs of the 3A borrowing protocol.
 section: Start here
 order: 1
 ---
 
-3A DAO builds the 3A borrowing protocol (EURO3, vaults, the Stability Pool and the A3A token) and runs the OPS swap at [swap.3adao.org](https://swap.3adao.org), where you can buy OPSBTC and OPSSOL. These docs are written for ordinary users and for AI agents. They say what the software does, including what happens to your money when something goes wrong.
+3A DAO runs the OPS swap at [swap.3adao.org](https://swap.3adao.org), where you can buy OPS tokens from your own wallet. It also built the 3A borrowing protocol (EURO3, vaults, the Stability Pool and the A3A token), which was phased out in 2024. These docs are written for ordinary users and for AI agents. They say what the software does, including what happens to your money when something goes wrong.
 
 Nothing here is financial advice. Tokens can lose value, and on-chain transactions cannot be reversed.
 
 ## Start here
 
-If you want to buy OPSBTC or OPSSOL:
+If you want to buy an OPS token:
 
 1. [What the OPS swap is](/swap/what-is-the-swap): the tokens, the pool price against NAV, and which chains.
 2. [Before you start](/swap/before-you-start): wallet, gas, what you will sign.

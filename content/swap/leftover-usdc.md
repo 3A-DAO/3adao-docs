@@ -33,5 +33,5 @@ If it did not run, the page says: "It didn't run, so nothing moved. The USDC is 
 - **The fee is about the same whatever the amount.** In October 2026 the fee was between about 1 and 3 cents. The confirmation shows the real figure. You receive the balance minus two fees, because one fee's worth stays behind in case the fee moves. If that leaves too little, the page says: "After the network fee, too little is left to be worth sending." In practice you need a balance of more than three times the fee. Dust below that cannot be recovered.
 - **It needs an EVM wallet** on Arbitrum, the same one that owns the account.
 - **Do not send it twice.** If the page says it could not confirm that NEAR Intents received your signature: "Your USDC stays in your NEAR Intents account unless it runs. Refresh this list in a minute before trying again."
-- **One execution at a time.** If another execution for the wallet is open, the page says "Another NEAR Intents execution for this wallet is still open. Try again once it finishes or its 10 minutes pass."
+- **One execution at a time.** If another execution for the wallet is open, the page says "Another NEAR Intents execution for this wallet is still open. Try again once it finishes or its 20 minutes pass."
 - **Wallet security warning?** Stop. Do not click through. Contact 3A DAO.

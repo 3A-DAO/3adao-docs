@@ -1,7 +1,7 @@
 ---
 title: Buy with USDC on Arbitrum
 nav: Buy on Arbitrum
-description: Step by step, how to buy OPSBTC or OPSSOL with USDC on Arbitrum from your own wallet, with the exact buttons and messages you will see.
+description: Step by step, how to buy an OPS token with USDC on Arbitrum from your own wallet, with the exact buttons and messages you will see.
 section: Swap
 order: 12
 ---
@@ -12,9 +12,9 @@ You need USDC on Arbitrum One and a little ETH on Arbitrum for gas. See [Before 
 
 ## Steps
 
-1. **Open [swap.3adao.org](https://swap.3adao.org).** The trade card is titled "Buy OPSBTC" or "Buy OPSSOL", after the token selected.
+1. **Open [swap.3adao.org](https://swap.3adao.org).** The trade card is titled after the token selected, for example "Buy OPSBTC".
 2. **Check "From (pay with)".** It must read "Arbitrum · direct (Uniswap)". That is the default. Under it you should see: "You trade directly with the Uniswap pool on Arbitrum".
-3. **Choose the token to buy.** Press the token button in the "Buy" box. A list titled "Choose what to buy" opens. Pick OPSBTC or OPSSOL.
+3. **Choose the token to buy.** Click its chart on the left, or press the token name in the card's heading or the token button in the "Buy" box. Both buttons open a list titled "Choose what to buy". Pick your token. [Check which way it moves](/swap/what-is-the-swap) first: OPLAI and OPSAI move in opposite directions.
 4. **Connect your wallet.** Press "Connect wallet". Your wallet asks you to approve the connection. If you are on the wrong network the button changes to "Switch from <network> to Arbitrum One". Press it and confirm in your wallet.
 5. **Enter the amount.** Type it in the top box, which is labelled "Sell" and holds USDC. Under it you see "Balance: X USDC" and a "Max" button. "Max" fills your exact balance. If you type more than you hold, the page says "You have X. Enter that or less, or press Max." and the button reads "Not enough USDC".
 6. **Read the quote.** The bottom box shows how many tokens you get. Under it are these rows: Route, Pool fee, Price impact, Average price, "Worst case, at minimum received", Minimum received and Network fee. What each one means is in [Reading the page](/swap/reading-the-page). Pay attention to Price impact. Above 2% the page shows a warning. A trade of any size is allowed, and the page does not stop you.
@@ -28,6 +28,8 @@ You need USDC on Arbitrum One and a little ETH on Arbitrum for gas. See [Before 
     - "We couldn't confirm this trade. Check your wallet's activity before trying again."
 
 If you see the last message, do not press "Buy" again. Look at your wallet's activity and at the transaction link first.
+
+While the approval or the swap is with your wallet or waiting to confirm, you cannot switch token or route: the transaction always matches the token on screen. The charts say "A trade is in progress in the swap panel. Finish or cancel it to switch token." and the route says "The route is fixed while a trade is in progress."
 
 ## Sending the tokens to a different address
 

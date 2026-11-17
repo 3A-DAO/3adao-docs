@@ -7,27 +7,29 @@ order: 15
 
 Every number on the page is derived from live data. The page shows when it was measured. A successful response is not a promise that a number is current, so check the timestamps.
 
-## The chart: "Pool price against strategy value"
+## The charts: "All tokens · pool price against the Optima app price"
+
+The left of the page shows one chart for every token on sale, each titled with the token and its strategy name. Click a chart to select that token in the swap panel. The selected chart is marked "In the swap", and the others read "Buy" with the token's name. On a phone the swap panel sits above the charts, and picking a chart scrolls back to it.
 
 - One line is the **pool price**, what the Uniswap pool charges. The pool line is stepped, because a pool price only changes when someone trades.
-- The other line is the **value**, the strategy's net asset value per token (NAV). It is smooth, because NAV is revalued continuously.
-- The gap between the lines is how far the pool sits from NAV. The readout above the chart shows "pool", "value" and the gap for the point you hover over, or the latest one.
-- The buttons set the time range: 24H, 1W, 1M, 3M and ALL.
-- The caption says what is drawn, for example "126 drawn of 289 readings". Long periods are thinned, but every drawn point is a real reading and the highs and lows are kept.
+- The other line is the **app price**, the price per token in the Optima app. The note above the charts says: "app price is the price per token in the Optima app". It is not the NAV, which is the strategy's total value (see below).
+- The gap between the lines is how far the pool sits from the Optima app price. The readout above each chart shows "pool", "app price" and the gap for the point you hover over, or the latest one.
+- One set of buttons above the list sets the time range for every chart at once: 24H, 1W, 1M, 3M and ALL, so the charts stay comparable.
+- Each chart's caption says what is drawn, for example "126 drawn of 289 readings". Long periods are thinned, but every drawn point is a real reading and the highs and lows are kept.
 - If the pool did not trade, the page says "The pool price is flat because the pool has not traded in this window."
 - A history that is short stays short. The page says "nothing is back-filled".
-- A chart point shows the strategy's value at the moment a trade was seen, so the line "can sit a little apart from the current figure above it".
+- A chart point shows the Optima app price at the moment a trade was seen, so, as the note under the list says, "a line can sit a little apart from the current figures below".
 
 ## "Pool depth"
 
 - "Total value in pool", the amount of OPS held and the USDC held.
 - "Pool fee": the percentage the Uniswap pool charges on each trade.
-- "Independent check": a second price source.
-- If the page's depth figure and the independent source disagree it says so and adds: "Size trades conservatively until they agree."
+- "Independent price": the price of one token, from a second source. It is not a depth figure, so don't compare it with the dollar amounts above it.
+- If the page's depth figure and the independent source disagree it says so and adds: "That source can lag a pool that has not traded, so check the pool contract before a large trade."
 
 ## "What backs the token" and "Proof of reserve"
 
-"What backs the token" shows the strategy name, "Value per token", "Tokens outstanding", "Strategy value", "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. See [What the swap is](/swap/what-is-the-swap).
+"What backs the token" shows the strategy name, "Optima app price" (the price per token in the Optima app), "Tokens outstanding", "Strategy value" (the strategy's net asset value, a total in dollars), "Price source" and "Price taken". "Proof of reserve" shows the status, the percentage of liabilities the assets cover, and where the assets are held. If the reserve report does not count the token you selected, it says so and shows none of these. The swap panel also links to the report, "Proof of reserve ↗", which opens optima.financial in a new tab. See [What the swap is](/swap/what-is-the-swap).
 
 Each box ends with a line such as "Reserves measured 3 min ago". If a figure is older than its budget, the page says: "older than its 300s budget, so treat it as indicative rather than current." The number of seconds varies.
 
@@ -39,7 +41,7 @@ Each box ends with a line such as "Reserves measured 3 min ago". If a figure is 
 | Route | "Uniswap v3 · Arbitrum" on the direct route. |
 | Pool fee | The Uniswap pool's trading fee, as a percentage. |
 | Price impact | How much worse your rate is than the pool's going rate, because your trade itself moves the price. |
-| Average price | What you pay per token, as a whole: the amount you pay divided by the tokens you get. On the cross-chain route it is "Average price, all fees in" and includes every bridge and network fee. A bracket compares it with NAV, for example "(1.25% above NAV)". |
+| Average price | What you pay per token, as a whole: the amount you pay divided by the tokens you get. On the cross-chain route it is "Average price, all fees in" and includes every bridge and network fee. A bracket compares it with the Optima app price, for example "(1.25% above the Optima app price)". |
 | Worst case, at minimum received | The same price if the pool moves as far as your slippage allows. |
 | Minimum received | The least you will get. If the price would leave you with less, the swap does not run. This is checked on-chain, in the swap itself. |
 | Network fee | Direct route: "paid by you, in ETH". Cross-chain: see below. |
@@ -55,7 +57,7 @@ Price impact is shown as a percentage. The page warns, and never blocks. There i
 | 2% up to 10% | A caution: "Price impact is X%: at this size your rate is about X% worse than the pool's going rate. A smaller amount costs less." |
 | 10% and above | "Very high price impact, X%: about Y% of the value you trade is lost to moving the pool's price. You can still go ahead; the minimum received below is the least you will get." |
 
-From 2% up, buys also show a link to buy at NAV on optima.financial (KYC required).
+From 2% up, buys also show a link to "buy at the Optima app price on optima.financial" (KYC required).
 
 The "Minimum received" does not protect you from a large impact. It is set under a quote that already includes the impact. In October 2026 the OPSBTC pool took a very large buy at a very bad price instead of refusing it. If an amount looks too big, make it smaller.
 

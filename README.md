@@ -4,7 +4,7 @@ Markdown source of truth for **[docs.3adao.org](https://docs.3adao.org)**.
 
 ## What these docs are
 
-- **The OPS swap** at [swap.3adao.org](https://swap.3adao.org): what OPSBTC and OPSSOL are, how to buy them with
+- **The OPS swap** at [swap.3adao.org](https://swap.3adao.org): what the OPS tokens are, how to buy them with
   USDC on Arbitrum or with a token from another EVM chain, what each screen means, and what to do when something
   goes wrong.
 - **The 3A borrowing protocol**: EURO3, vaults, the Stability Pool, liquidations, the A3A token, contracts and

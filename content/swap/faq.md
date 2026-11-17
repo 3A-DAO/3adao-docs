@@ -1,11 +1,13 @@
 ---
 title: FAQ
-description: Short answers to common questions about buying OPSBTC and OPSSOL on swap.3adao.org.
+description: Short answers to common questions about buying OPS tokens on swap.3adao.org.
 section: Swap
 order: 20
 ---
 
-**Do I need an account or KYC?** Not on the swap. The page says "No account and no KYC" for the pool route. Buying at NAV on optima.financial is a separate route for KYC-verified users.
+**What is the difference between OPLAI and OPSAI?** They move in opposite directions. OPLAI moves with a basket of AI infrastructure stocks. OPSAI moves against it, so a rally in those stocks is a loss on OPSAI. Neither moves one-for-one with the basket: a move can be larger or smaller. See [What the tokens are](/swap/what-is-the-swap).
+
+**Do I need an account or KYC?** Not on the swap. The page says "No account and no KYC" for the pool route. Buying at the Optima app price on optima.financial is a separate route for KYC-verified users.
 
 **Is there a minimum or a maximum?** The page states "No minimum and no lock-up on this page". On the cross-chain route the bridge has its own minimum, and the page tells you when your amount is below it. There is no maximum order size, only a warning for price impact and a refusal when the pool cannot fill the trade.
 
@@ -21,9 +23,9 @@ order: 20
 
 **How long does a cross-chain buy take?** The page shows an expected time in seconds. In tests it took under two minutes after the deposit. See [Buy from another chain](/swap/buy-from-another-chain).
 
-**How long do I have to send the deposit?** The page tells you to send within 6 minutes of signing. The quote closes at 10 minutes.
+**How long do I have to send the deposit?** The page tells you to send within 16 minutes. The deposit window closes 20 minutes after the buy is created.
 
-**My buy says EXPIRED. Is my money gone?** No. If you sent nothing, nothing moved. If you sent a deposit near the end, NEAR Intents may still complete it, and the page keeps waiting for 20 minutes. See [Track your buy](/swap/track-your-buy).
+**My buy says EXPIRED. Is my money gone?** If you sent nothing, nothing moved. If you sent a deposit, what happens depends on whether its transaction hash was recorded. The page records it when you use its Send button. If you sent by hand, paste the hash into the box on the page. With a recorded hash NEAR Intents keeps trying to complete the buy for up to 7 days after it was created. Without one, EXPIRED is final, and the page tells you to contact NEAR Intents support. See [Track your buy](/swap/track-your-buy).
 
 **Where did my leftover USDC go?** It is in a NEAR Intents account linked to your wallet. You can send it back. See [Leftover USDC](/swap/leftover-usdc).
 
@@ -35,7 +37,7 @@ order: 20
 
 **Can I sell and receive money on another chain?** Not on this page.
 
-**Why is the price different from NAV?** The pool price is set by trading in a small pool. The page does not promise they match. See [Reading the page](/swap/reading-the-page).
+**Why is the pool price different from the Optima app price?** The pool price is set by trading in a small pool. The page does not promise they match. Neither price is the NAV. NAV is the whole strategy's value, a total rather than a price per token, and the page shows it as "Strategy value". See [Reading the page](/swap/reading-the-page).
 
 **Does 3A DAO hold my funds?** On the direct route, no. On the cross-chain route your money passes through a NEAR Intents account, run by Aurora, for a short time, and stays there if the swap does not run. 3A DAO does not run it.
 

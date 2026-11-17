@@ -25,7 +25,7 @@ If the swap does not run, the USDC stays in that account until you send it back.
 ## Risks
 
 - **Price risk.** Each token follows a strategy or a rule-based basket. For OPSBTC and OPSSOL the page's own disclosures say: "Digital assets and momentum strategies carry significant risk, including loss of capital." For OPLAI and OPSAI they say: "Equity perpetuals and rule-based strategies carry significant risk, including loss of capital." Past performance does not indicate future results.
-- **Direction risk (OPLAI and OPSAI).** OPLAI falls when AI stocks fall: "The rules do not step aside in a falling market." OPSAI runs the other way: "A rally in these stocks is a loss". Neither moves one-for-one with the basket. If you buy the wrong one, you hold the opposite of what you meant to. For both, the page adds: "Equity perpetuals carry funding costs, and the positions sit on one venue, Hyperliquid."
+- **Direction risk (OPLAI and OPSAI).** OPLAI falls when AI stocks fall: "The rules do not step aside in a falling market, and the basket is one theme." The page adds: "Exposure can run above the basket’s own, which makes a fall larger." OPSAI runs the other way: "A rally in these stocks is a loss". Neither moves one-for-one with the basket. If you buy the wrong one, you hold the opposite of what you meant to. For both, the page adds: "Equity perpetuals carry funding costs, and the positions sit on one venue, Hyperliquid."
 - **Pool price risk.** The pool price is not guaranteed to equal the Optima app price. You may buy above it or sell below it. For OPLAI and OPSAI the page adds that arbitrage "cannot close every gap".
 - **A small pool moves a lot.** There is no limit on order size. The page warns about price impact and does not stop you. A very large buy fills at a much worse price than the one on screen. Typing one extra zero can cost most of what you pay. Check "Price impact" and "Minimum received" every time.
 - **Recipient mistakes cannot be undone.** Receiving needs no signature, so tokens sent to an address nobody controls are gone. The page refuses the obvious mistakes but cannot know your intent.
@@ -33,7 +33,7 @@ If the swap does not run, the USDC stays in that account until you send it back.
 - **Late deposits.** On the cross-chain route a deposit after the close time may buy nothing and be refunded minus fees, or stay in your NEAR Intents account.
 - **Gas.** Without the gas coin of the origin chain in your wallet you cannot send the deposit, and the buy expires.
 - **Third-party service risk.** NEAR Intents, the bridge, Uniswap and your wallet can fail or change. Cross-chain routes come and go. The page cannot promise one will work.
-- **Smart-contract risk.** The tokens, the pool and the swap router are smart contracts. The page lists "Vehicle risk" for the token wrapper: "Smart-contract, custody and execution risk."
+- **Smart-contract risk.** The tokens, the pool and the swap router are smart contracts. The page lists "Vehicle risk" for the token wrapper: "Smart-contract, custody and execution risk in the tokenized wrapper."
 - **Issuer risk.** The strategy, its custody and its prospectus belong to the issuer. Read the issuer's documents. Statements about backing and custody "describe how the product is structured. They are not a guarantee of price or return."
 - **Data risk.** Figures come from public data feeds and may be late. Check the "measured" timestamps.
 - **Not every wallet works the same.** Some wallets relay transactions or pay gas in a token. If something looks wrong, stop and check.

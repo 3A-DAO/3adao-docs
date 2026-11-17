@@ -27,7 +27,8 @@ never advise clicking through a wallet warning). This store describes STRUCTURE 
 - **`/3a-protocol/...` paths are the old GitBook URLs.** They are linked from the borrowing-protocol README, audits
   and third parties. Renaming a file under `content/3a-protocol/` breaks an inbound link unless `vercel.json` gets a
   redirect.
-- **`REPO_PUBLIC`** in `build.mjs` hides every link to the GitHub repo while the repo is private.
+- **`REPO_PUBLIC`** in `build.mjs` (true since 2026-10-29, D-005) adds source, edit and issue links to every page.
+  Set it to false if the repo goes private again, or the links 404.
 
 ## Infra & cross-cutting
 - **Host**: Vercel team `optima-fi`, project `3adao-docs`, git-connected. `main` → Production; other branches → Preview.

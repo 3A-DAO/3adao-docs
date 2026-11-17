@@ -23,7 +23,14 @@ pages when the swap ships a user-visible change. _Source: 2026-10-28 docs build.
 
 ### D-004 · Repo starts private; `REPO_PUBLIC=false` hides GitHub links
 Until 3A DAO decides to open the repo, the footer carries no source/edit links (they would 404). _Source:
-`build.mjs` `REPO_PUBLIC`._
+`build.mjs` `REPO_PUBLIC`._ **Superseded by D-005.**
+
+### D-005 · Repo public to read; `main` changes only by a PR Michal approves
+`REPO_PUBLIC=true`: every page links to its source, an edit link and issues. `main` is protected: PR required,
+admins included, no force push or deletion, pushes limited to `token-boss`. — Michal: "public to read, but I need to
+approve the PRs, no direct pushes". ⚠️ Agents and Michal share the `token-boss` account, so GitHub cannot tell an
+agent's merge from his: the rule that only Michal merges is held by agents, not enforced by GitHub. A real lock needs
+a separate non-admin account for agents. _Source: PWW Slack C0CCD6PSQ7R thread 1793190795.961219, 2026-10-29._
 
 ---
 _Add new decisions above this line. One decision, the why, and a source each._

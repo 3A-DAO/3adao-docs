@@ -23,9 +23,9 @@ const CONTENT = join(ROOT, "content");
 const DIST = join(ROOT, "dist");
 const SITE = "https://docs.3adao.org";
 const REPO = "https://github.com/3A-DAO/3adao-docs";
-// The repo starts private. While it is, links to it would 404 for every reader, so the
-// "source / edit / report" links are left out. Flip this when the repo goes public.
-const REPO_PUBLIC = false;
+// Public since 2026-10-29. Set to false if the repo ever goes private again: the
+// "source / edit / report" links would 404 for every reader.
+const REPO_PUBLIC = true;
 const CHECK = process.argv.includes("--check");
 
 // ---------------------------------------------------------------- frontmatter
